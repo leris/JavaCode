@@ -60,32 +60,53 @@ public class StringMethods {
 		 * replace() replaces occurrences of a character with a new character
 		 */
 		String x7 = "xoxoxox";
-		System.out.println("\nreplace()\n    String x7 = \"xoxoxox\";\n    x7.replace('x','X');\nAbove code returns - " + x7.replace('x','X'));
-				
+		System.out
+				.println("\nreplace()\n    String x7 = \"xoxoxox\";\n    x7.replace('x','X');\nAbove code returns - "
+						+ x7.replace('x', 'X'));
 
 		/**
 		 * substring() returns part of a string
 		 */
 		String x8 = "0123456789";
-		System.out.println("\nsubstring()\n    String x8 = \"0123456789\";\n    x8.substring(5);\nAbove code returns - " + x8.substring(5));
-		
-		
-		
-		
-		/**
-		 * toLowerCase() returns a string with all uppecase characters converted
-		 */
+		System.out
+				.println("\nsubstring()\n    String x8 = \"0123456789\";\n    x8.substring(5);\nAbove code returns - "
+						+ x8.substring(5));
+		System.out
+				.println("\n    String x8 = \"0123456789\";\n    x8.substring(5,8);\nAbove code returns - "
+						+ x8.substring(5, 8));
+		System.out
+				.println("\n    String x8 = \"0123456789\";\n    x8.substring(5,12);\nAbove code returns -  java.lang.StringIndexOutOfBoundsException");
 
 		/**
-		 * toString() returns the value of a string
+		 * toLowerCase() returns a string with all lower case characters
+		 * converted
 		 */
+		String x9 = "Hello Mr Johnston";
+		System.out
+				.println("\ntoLowerCase()\n    String x9 =\"Hello Mr Johnston\";\n    x9.toLowerCase();\nAbove code returns - "
+						+ x9.toLowerCase());
 
 		/**
 		 * toUpperCase returns a string with all lowercase characters converted
 		 */
+		String x10 = "TOP OF THE MORNING TO YA";
+		System.out
+				.println("\ntoUpperCase()\n    String x10=\"TOP OF THE MORNING TO YA\";\n    x10.toUpperCase();\nAbove code returns - "
+						+ x10.toLowerCase());
 
 		/**
-		 * trim
+		 * toString() returns the value of a string
 		 */
+		String x11 = "My name is ....";
+		System.out
+				.println("\ntoString()\n    String x11 = \"My name is ....\";\n    x11.toString();\nAbove code returns - "
+						+ x11.toString());
+		/**
+		 * trim() removes white space from the front or end of a string
+		 */
+		String x12 = "      hi      ";
+		System.out.println("\ntrim()\n    String x12 = \"      hi      \";\n    x12.trim();\nAbove code returns - "
+				+ x12.trim());
+		
 	}
 }
